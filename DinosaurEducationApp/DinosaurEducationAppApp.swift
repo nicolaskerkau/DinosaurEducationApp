@@ -11,7 +11,8 @@ import SwiftUI
 struct DinosaurEducationAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(ContentModel())
         }
     }
 }

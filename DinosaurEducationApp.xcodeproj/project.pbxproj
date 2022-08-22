@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		379B54EB28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */; };
-		379B54ED28B33C6A007AFFF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EC28B33C6A007AFFF5 /* ContentView.swift */; };
+		379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EC28B33C6A007AFFF5 /* HomeView.swift */; };
 		379B54EF28B33C6B007AFFF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B54EE28B33C6B007AFFF5 /* Assets.xcassets */; };
 		379B54F228B33C6B007AFFF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B54F128B33C6B007AFFF5 /* Preview Assets.xcassets */; };
+		379B54FE28B33CBC007AFFF5 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54FD28B33CBC007AFFF5 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		379B54E728B33C6A007AFFF5 /* DinosaurEducationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinosaurEducationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurEducationAppApp.swift; sourceTree = "<group>"; };
-		379B54EC28B33C6A007AFFF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		379B54EC28B33C6A007AFFF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		379B54EE28B33C6B007AFFF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379B54F128B33C6B007AFFF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		379B54FD28B33CBC007AFFF5 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,12 @@
 		379B54E928B33C6A007AFFF5 /* DinosaurEducationApp */ = {
 			isa = PBXGroup;
 			children = (
+				379B54FC28B33C9C007AFFF5 /* Resources */,
+				379B54FB28B33C96007AFFF5 /* Services */,
+				379B54FA28B33C8F007AFFF5 /* Views */,
+				379B54F928B33C89007AFFF5 /* ViewModels */,
+				379B54F828B33C84007AFFF5 /* Models */,
 				379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */,
-				379B54EC28B33C6A007AFFF5 /* ContentView.swift */,
 				379B54EE28B33C6B007AFFF5 /* Assets.xcassets */,
 				379B54F028B33C6B007AFFF5 /* Preview Content */,
 			);
@@ -65,6 +71,43 @@
 				379B54F128B33C6B007AFFF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		379B54F828B33C84007AFFF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				379B54FD28B33CBC007AFFF5 /* ContentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		379B54F928B33C89007AFFF5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		379B54FA28B33C8F007AFFF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				379B54EC28B33C6A007AFFF5 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		379B54FB28B33C96007AFFF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		379B54FC28B33C9C007AFFF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379B54ED28B33C6A007AFFF5 /* ContentView.swift in Sources */,
+				379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */,
 				379B54EB28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift in Sources */,
+				379B54FE28B33CBC007AFFF5 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
