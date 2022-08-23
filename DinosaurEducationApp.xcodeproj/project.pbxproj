@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37712D5528B4AC4200B9BDD4 /* ContentsViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D5428B4AC4200B9BDD4 /* ContentsViewRow.swift */; };
+		37712D5728B58F7F00B9BDD4 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D5628B58F7F00B9BDD4 /* ContentDetailView.swift */; };
 		379B54EB28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */; };
 		379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EC28B33C6A007AFFF5 /* HomeView.swift */; };
 		379B54EF28B33C6B007AFFF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B54EE28B33C6B007AFFF5 /* Assets.xcassets */; };
@@ -16,9 +18,12 @@
 		379B550228B34475007AFFF5 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 379B550128B34475007AFFF5 /* style.html */; };
 		379B550428B34494007AFFF5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B550328B34494007AFFF5 /* Models.swift */; };
 		379B550628B48B9D007AFFF5 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B550528B48B9D007AFFF5 /* HomeViewRow.swift */; };
+		379B550828B49B54007AFFF5 /* ContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B550728B49B54007AFFF5 /* ContentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37712D5428B4AC4200B9BDD4 /* ContentsViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsViewRow.swift; sourceTree = "<group>"; };
+		37712D5628B58F7F00B9BDD4 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		379B54E728B33C6A007AFFF5 /* DinosaurEducationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinosaurEducationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurEducationAppApp.swift; sourceTree = "<group>"; };
 		379B54EC28B33C6A007AFFF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		379B550128B34475007AFFF5 /* style.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		379B550328B34494007AFFF5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		379B550528B48B9D007AFFF5 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		379B550728B49B54007AFFF5 /* ContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				379B54EC28B33C6A007AFFF5 /* HomeView.swift */,
 				379B550528B48B9D007AFFF5 /* HomeViewRow.swift */,
+				379B550728B49B54007AFFF5 /* ContentsView.swift */,
+				37712D5428B4AC4200B9BDD4 /* ContentsViewRow.swift */,
+				37712D5628B58F7F00B9BDD4 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +204,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */,
+				37712D5528B4AC4200B9BDD4 /* ContentsViewRow.swift in Sources */,
 				379B550628B48B9D007AFFF5 /* HomeViewRow.swift in Sources */,
+				37712D5728B58F7F00B9BDD4 /* ContentDetailView.swift in Sources */,
+				379B550828B49B54007AFFF5 /* ContentsView.swift in Sources */,
 				379B54EB28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift in Sources */,
 				379B54FE28B33CBC007AFFF5 /* ContentModel.swift in Sources */,
 				379B550428B34494007AFFF5 /* Models.swift in Sources */,
