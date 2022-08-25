@@ -21,12 +21,16 @@ struct ContentsView: View {
                         
                         NavigationLink {
                             ContentDetailView()
+                                .onAppear {
+                                    model.beginLesson(index)
+                                }
                         } label: {
                             ContentsViewRow(index: index)
                         }
                     }
                 }
             }
+            .accentColor(.black)
             .padding()
             .navigationTitle("Learn \(model.currentModule?.category ?? "")")
         }

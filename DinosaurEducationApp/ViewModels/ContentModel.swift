@@ -17,6 +17,10 @@ class ContentModel: ObservableObject {
     @Published var currentModule: Module?
     var currentModuleIndex = 0
     
+    // Lesson tracking
+    @Published var currentLesson: Lesson?
+    var currentLessonIndex = 0
+    
     init () { getLocalData() }
     
     //MARK: Data methods
@@ -65,5 +69,52 @@ class ContentModel: ObservableObject {
         }
         // Set the current module
         currentModule = modules[currentModuleIndex]
+    }
+    
+    //MARK: Lesson Navigation Method
+    func beginLesson(_ lessonIndex:Int) {
+        // Check that the lessonIndex is within range
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+        }
+        else {
+            currentLessonIndex = 0
+        }
+        // Set the current lesson
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
+    }
+    
+    //MARK: hasNextLesson
+    func hasNextLesson() -> Bool {
+        // Check to ensure there is another lesson and return true if there is.
+        // Code could be written like this, or...
+        /*
+        if currentLessonIndex + 1 < currentModule!.content.lessons.count {
+            return true
+        }
+        else {
+            return false
+        }
+         */
+        // ...like this:
+        // in which case this evaluates the expression and returns the result, whether
+        // "this" is true or false.
+        return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
+    }
+    
+    //MARK: Advance to Next Lesson
+    func advanceNextLesson() {
+        // Advance the lesson index
+        currentLessonIndex += 1
+        // Ensure it's within range
+        if currentLessonIndex < currentModule!.content.lessons.count {
+            // Set the current lesson property
+            currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        }
+        else {
+            // Reset the lesson state
+            currentLesson = nil
+            currentLessonIndex = 0
+        }
     }
 }
