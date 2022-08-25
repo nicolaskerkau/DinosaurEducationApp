@@ -21,6 +21,9 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Track the current content selected
+    @Published var currentContentSelected:Int?
+    
     init () { getLocalData() }
     
     //MARK: Data methods
