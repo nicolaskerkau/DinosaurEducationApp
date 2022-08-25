@@ -21,8 +21,19 @@ struct ContentDetailView: View {
                 if url != nil {
                     VideoPlayer(player: AVPlayer(url: url!))
                         .cornerRadius(10)
+                        .frame(height: 200)
                 }
                 // TODO: Add Explanation
+                ScrollView {
+                    VStack (alignment: .leading) {
+                        Text("More...")
+                            .font(.title3)
+                            .padding(.bottom, 5)
+                        Text(lesson?.explanation ?? "")
+                            .font(.system(size: 14))
+                            .foregroundColor(Color(.sRGB, red: 0.2, green: 0.2, blue: 0.2, opacity: 1))
+                    }
+                }
                 
                 //MARK: Next Lesson Button
                 if model.hasNextLesson() {
@@ -45,6 +56,7 @@ struct ContentDetailView: View {
                 }
             }
             .padding()
+            .navigationTitle(lesson?.title ?? "")
     }
 }
 
