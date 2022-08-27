@@ -26,7 +26,19 @@ struct TestResultsView: View {
                 .font(.title3)
                 .fontWeight(.regular)
                 .padding()
-            
+            Button {
+                model.currentTestSelected = nil
+            } label: {
+                ZStack {
+                    RectangleCard(color: Color.green)
+                        .frame(height: 48)
+                    Text("Finish")
+                        .bold()
+                        .foregroundColor(.white)
+                }
+                .padding(.horizontal, 40)
+            }
+
         }
     }
 }
