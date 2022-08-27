@@ -13,6 +13,7 @@
 		37712D5D28B5A22C00B9BDD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D5C28B5A22C00B9BDD4 /* Constants.swift */; };
 		37712D7B28B788DB00B9BDD4 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D7A28B788DB00B9BDD4 /* RectangleCard.swift */; };
 		37712D9928B9B8F900B9BDD4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D9828B9B8F900B9BDD4 /* TestView.swift */; };
+		37712D9B28BA04A900B9BDD4 /* TestResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37712D9A28BA04A900B9BDD4 /* TestResultsView.swift */; };
 		379B54EB28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */; };
 		379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B54EC28B33C6A007AFFF5 /* HomeView.swift */; };
 		379B54EF28B33C6B007AFFF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379B54EE28B33C6B007AFFF5 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		37712D5C28B5A22C00B9BDD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37712D7A28B788DB00B9BDD4 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		37712D9828B9B8F900B9BDD4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		37712D9A28BA04A900B9BDD4 /* TestResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsView.swift; sourceTree = "<group>"; };
 		379B54E728B33C6A007AFFF5 /* DinosaurEducationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinosaurEducationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379B54EA28B33C6A007AFFF5 /* DinosaurEducationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinosaurEducationAppApp.swift; sourceTree = "<group>"; };
 		379B54EC28B33C6A007AFFF5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				37712D5628B58F7F00B9BDD4 /* ContentDetailView.swift */,
 				37712D7A28B788DB00B9BDD4 /* RectangleCard.swift */,
 				37712D9828B9B8F900B9BDD4 /* TestView.swift */,
+				37712D9A28BA04A900B9BDD4 /* TestResultsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				379B54ED28B33C6A007AFFF5 /* HomeView.swift in Sources */,
+				37712D9B28BA04A900B9BDD4 /* TestResultsView.swift in Sources */,
 				37712D5528B4AC4200B9BDD4 /* ContentsViewRow.swift in Sources */,
 				37712D9928B9B8F900B9BDD4 /* TestView.swift in Sources */,
 				379B550628B48B9D007AFFF5 /* HomeViewRow.swift in Sources */,

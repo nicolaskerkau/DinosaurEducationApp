@@ -110,6 +110,13 @@ class ContentModel: ObservableObject {
         return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
     }
     
+    //MARK: hasNextQuestion
+    func hasNextQuestion () -> Bool {
+        
+        return (currentQuestionIndex + 1 < currentModule!.test.questions.count)
+        
+    }
+    
     //MARK: beginTest
     func beginTest(_ moduleid:Int) {
         // Set the current module
@@ -137,6 +144,18 @@ class ContentModel: ObservableObject {
             // Reset the lesson state
             currentLesson = nil
             currentLessonIndex = 0
+        }
+    }
+    
+    //MARK: Advance to Next Question
+    func advanceNextQuestion() {
+        if hasNextQuestion() {
+            currentQuestionIndex += 1
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+        }
+        else {
+            currentQuestion = nil
+            currentQuestionIndex = 0
         }
     }
 }

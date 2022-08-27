@@ -13,7 +13,7 @@
                     "title": "Geological Eras",
                     "video": "A%20Brief%20History%20of%20Geologic%20Time%20-%20oDownloader.com.mp4",
                     "duration": "12 minutes",
-                    "explanation": "The geologic tie scale, or geological time scale, (GTS) is a representation of time based on the rock record of Earth. It is a system of chronological dating that uses chronostratigraphy (the process of relating strata to time) and geochronology (scientific branch of geology that aims to determine the age of rocks). It is used primarily by Earth Scientists (including geologists, paleontologists, geophysicists, geochemists, and paleclimatologists) to describe the timing and relationships of events in geologic history. The time scale has been developed through the study of rock layers and the observation of their relationships and identifying features such as lithologies, paleomagnetic properties, and fossils. The definition of standardized international units of geologic time is the responsibility of the International Commission on Stratigraphy (ICS), a constituent body of the International Union of Geological Studies (IUGS), whose primary objective is to precisely define global chronostratigraphic units of the International Chronostratigraphic Chart (ICC) that are used to define divisions of geologic time. The chronostratigraphic divisions are in turn used to define geochronologic units."
+                    "explanation": "The geologic time scale, or geological time scale, (GTS) is a representation of time based on the rock record of Earth. It is a system of chronological dating that uses chronostratigraphy (the process of relating strata to time) and geochronology (scientific branch of geology that aims to determine the age of rocks). It is used primarily by Earth Scientists (including geologists, paleontologists, geophysicists, geochemists, and paleclimatologists) to describe the timing and relationships of events in geologic history. The time scale has been developed through the study of rock layers and the observation of their relationships and identifying features such as lithologies, paleomagnetic properties, and fossils. The definition of standardized international units of geologic time is the responsibility of the International Commission on Stratigraphy (ICS), a constituent body of the International Union of Geological Studies (IUGS), whose primary objective is to precisely define global chronostratigraphic units of the International Chronostratigraphic Chart (ICC) that are used to define divisions of geologic time. The chronostratigraphic divisions are in turn used to define geochronologic units."
                 },
                 {
                     "id": 1,
@@ -88,110 +88,109 @@
             "questions": [
                 {
                     "id": 0,
-                    "content": "<p>What keyword is used to define a constant in Swift?</p>",
+                    "content": "What is CHRONOSTRATIGRAPHY?",
                     "correctIndex": 2,
                     "answers": [
-                        "const",
-                        "var",
-                        "let",
-                        "const var"
+                        "The layers of the Earth from oldest to newest.",
+                        "The study of the Earth's age.",
+                        "The process of relating Earth's strata to time.",
+                        "The noise clocks make when they reach a new hour."
                     ]
                 },
                 {
                     "id": 1,
-                    "content": "<p>How large is an Int?</p>",
+                    "content": "What type of homeothermy did large dinosaurs use?",
                     "correctIndex": 3,
                     "answers": [
-                        "16 bits",
-                        "32 bits",
-                        "64 bits",
-                        "It depends on the platform"
+                        "Bulk Homeothermy",
+                        "Inertial Homeothermy",
+                        "Mass Homeothermy",
+                        "All of the Above"
                     ]
                 },
                 {
                     "id": 2,
-                    "content": "<p>What is the value of <span class='pre'>b</span> in the following expression?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>a</span> = <span class='k'>false</span></li><li><span class='k'>let</span> <span class='nv'>b</span> = <span class='k'>false</span> || ( <span class='k'>true</span> && !<span class='k'>a</span> )</li></ol></div></div></div>",
+                    "content": "Do feathers serve any purpose other than flight?",
                     "correctIndex": 0,
                     "answers": [
-                        "true",
-                        "false"
+                        "Yes",
+                        "No"
                     ]
                 },
                 {
                     "id": 3,
-                    "content": "<p>What is the type and value of str in the following expression?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>num</span> = <span class='m'>12.0</span></li><li><span class='k'>let</span> <span class='nv'>str</span> = <span class='nv'>String</span>(<span class='nv'>num</span>)</li></ol></div></div></div>",
+                    "content": "What do paleontologists study to determine a dinosaur's speed?",
                     "correctIndex": 1,
                     "answers": [
-                        "Type: String, Value: \"12.0\"",
-                        "Type: String?, Value: \"12.0\"",
-                        "Type: String, Value: \"12\"",
-                        "Type: String?, Value: nil"
+                        "Tracks",
+                        "Trackways",
+                        "Trackmarks",
+                        "Tracks"
                     ]
                 },
                 {
                     "id": 4,
-                    "content": "<p>What operator takes two numbers, and returns a boolean?</p>",
+                    "content": "What is the LITHOSPHERE?",
                     "correctIndex": 4,
                     "answers": [
-                        "<",
-                        ">",
-                        "==",
-                        "!=",
-                        "all of the above"
+                        "Another name for Earth's Core.",
+                        "The combination of Earth's Exosphere and Ionosphere.",
+                        "Earth's Crust and Stratosphere.",
+                        "Earth's Upper Mantle and Lower Mantle.",
+                        "The combination of Earth's Crust and Upper Mantle."
                     ]
                 },
                 {
                     "id": 5,
-                    "content": "<p>What does the following code output?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>total</span> = <span class='m'>0</span></li><li><span class='k'>let</span> <span class='nv'>nums</span> = [<span class='m'>0</span>, <span class='m'>1</span>, <span class='m'>2</span>, <span class='m'>3</span>]</li><li><span class='k'>for</span> <span class='nv'>num</span> <span class='k'>in</span> <span class='nv'>nums</span> {</li><li><span class='nv'>total</span> += <span class='nv'>num</span></span></li><li>}</li>",
+                    "content": "Where does the word FOSSIL originate from?",
                     "correctIndex": 2,
                     "answers": [
-                        "0",
-                        "3",
-                        "6",
-                        "10"
+                        "The spanish word Fossillo - to be buried.",
+                        "The latin word Fossus - to be found.",
+                        "The latin word Fossus - to be dug up.",
+                        "The greek word Fossus - to be discovered."
                     ]
                 },
                 {
                     "id": 6,
-                    "content": "<p>What is the following function's return type?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>func</span> <span class='nv'>foo</span>(<span class='nv'>bar</span>: <span class='nc'>String</span>, <span class='nv'>bizz</span>: <span class='nc'>Bool</span>) -&gt; <span class='nc'>Int</span> {...}</li></ol></div></div></div>",
-                    "correctIndex": 2,
+                    "content": "What is a basic assumption of CLADISTICS?",
+                    "correctIndex": 3,
                     "answers": [
-                        "String",
-                        "Bool",
-                        "Int",
-                        "It doesn't have a return type"
+                        "Any group of organisms are related by descent from a common ancestor.",
+                        "There is a bifurcating pattern of cladogenesis.",
+                        "Change in characteristics occurs in lineages over time.",
+                        "All of the above."
                     ]
                 },
                 {
                     "id": 7,
-                    "content": "Structures can't:",
+                    "content": "What group of birds dominated the mesezoic?",
                     "correctIndex": 3,
                     "answers": [
-                        "Define properties to store values",
-                        "Define initializers to set up their initial state",
-                        "Conform to protocols to provide standard functionality of a certain kind",
-                        "Inherit the characteristics of another structure"
+                        "Quetzoquatlus",
+                        "Archaeoptrix",
+                        "Non-Avians",
+                        "Enantiornithines"
                     ]
                 },
                 {
                     "id": 8,
-                    "content": "Why might you throw an error?",
+                    "content": "Avian dinosaurs were cold-blooded.",
                     "correctIndex": 1,
                     "answers": [
-                        "The code has become too complicated to continue writing",
-                        "Something unexpected happened and the normal flow of execution can't continue",
-                        "To pass data to a caller method"
+                        "True",
+                        "False"
                     ]
                 },
                 {
                     "id": 9,
-                    "content": "How can you deal with an error?",
+                    "content": "Is Nicolas A. Kerkau a dinosaur?",
                     "correctIndex": 3,
                     "answers": [
-                        "By correcting the problem",
-                        "By trying an alternative approach",
-                        "By informing the user of the failure",
-                        "All of the above"
+                        "Yes.",
+                        "Yes.",
+                        "Yes.",
+                        "All of the above."
                     ]
                 }
             ]
