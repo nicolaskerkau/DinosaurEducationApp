@@ -22,7 +22,7 @@ struct HomeView: View {
                         //loop for the entire array of modules
                         ForEach(model.modules) { module in
                             VStack (spacing: 20) {
-                                
+                                //MARK: Lesson Card Navigation
                                 NavigationLink (tag: module.id, selection: $model.currentContentSelected) {
                                     ContentsView()
                                         .onAppear {
@@ -32,8 +32,15 @@ struct HomeView: View {
                                     // Lesson Card
                                     HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                 }
-                                // Test Card
-                                HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
+                                //MARK: Test Card Navigation
+                                NavigationLink(tag: module.id, selection: $model.currentTestSelected) {
+                                    TestView().onAppear {
+                                        model.beginTest(module.id)
+                                    }
+                                } label: {
+                                    // Test Card
+                                    HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
+                                }
                             }
                         }
                     }

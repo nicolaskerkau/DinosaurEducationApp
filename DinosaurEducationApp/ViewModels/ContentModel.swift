@@ -21,8 +21,13 @@ class ContentModel: ObservableObject {
     @Published var currentLesson: Lesson?
     var currentLessonIndex = 0
     
+    // Question Tracking
+    @Published var currentQuestion: Question?
+    var currentQuestionIndex = 0
+    
     // Track the current content selected
-    @Published var currentContentSelected:Int?
+    @Published var currentContentSelected: Int?
+    @Published var currentTestSelected: Int?
     
     init () { getLocalData() }
     
@@ -103,6 +108,20 @@ class ContentModel: ObservableObject {
         // in which case this evaluates the expression and returns the result, whether
         // "this" is true or false.
         return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
+    }
+    
+    //MARK: beginTest
+    func beginTest(_ moduleid:Int) {
+        // Set the current module
+        beginModule(moduleid)
+        
+        // Set the current lesson
+        currentQuestionIndex = 0
+        
+        // If there are questions, set the index to the first one
+        if currentModule?.test.questions.count ?? 0 > 0 {
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+        }
     }
     
     //MARK: Advance to Next Lesson
